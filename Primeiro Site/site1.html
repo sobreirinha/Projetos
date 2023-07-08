@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+   
+        <link rel="stylesheet" href="estilo.css"/> 
+</head>
+    <script language="javascript" src="funcoes.js">
+    </script>
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <hgroup>
+                <h1>Mundo Estranho</h1>
+                <h2>Subtítulo</h2>
+            </hgroup>
+            <img id="icone" src="imagens/fotomanha.jpg"/>
+            
+            <nav id="menu">
+                <h1>Menu principal</h1>
+                <ul type="disc">
+                    <li onmouseover="mudaFoto('imagens/home.jpg')" onmouseout="mudaFoto('imagens/fotomanha.jpg')"><a href="site1.html">Casa</a></li>
+                    <li onmouseover="mudaFoto('imagens/espe.png')" onmouseout="mudaFoto('imagens/fotomanha.jpg')"><a href="specs.html">Especificações</a></li>
+                    <li onmouseover="mudaFoto('imagens/sol.jpg')" onmouseout="mudaFoto('imagens/fotomanha.jpg')"><a href="fotos.html">Fotos</a></li>
+                    <li onmouseover="mudaFoto('imagens/mult.png')" onmouseout="mudaFoto('imagens/fotomanha.jpg')"><a href="multimídia.html">Multimídia</a></li>
+                    <li onmouseover="mudaFoto('imagens/tele.png')" onmouseout="mudaFoto('imagens/fotomanha.jpg')"><a href="fala-sozinho.html">Fale Sozinho</a></li>
+                </ul>
+            </nav>
+        </header>
+         
+        <section id="corpo">
+            <article id="principal">
+                <header id="cabecalho-artigo">
+                
+                    <hgroup>
+                     <h3>Lorem ipsum em 2023 > inovações</h3>
+                     <h1>Lorem Ipsum</h1>
+                     <h2>Por GSS</h2>
+                     <h3 class="direita">Atualizado 2023</h3>
+                    </hgroup>
+                </header>
+                <h2 style="text-align: center;">O que está acontecendo?</h2>
+                <p>O mundo está passando por uma <b>fase</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus non quam a sollicitudin. Vestibulum porttitor iaculis purus eu mattis. Fusce ac turpis sit amet lectus convallis sodales. Aenean urna mi, malesuada nec aliquet et, gravida sed urna. Ut sollicitudin efficitur faucibus. Donec ligula metus, consectetur in vulputate eget, lacinia id diam. Morbi pulvinar egestas dui, in iaculis tellus gravida at. Sed molestie mattis fringilla.</p>
+                <p>Lorem ipsum dolor sit amet . Os <a ref="">operadores</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus non quam a sollicitudin. Vestibulum porttitor iaculis purus eu mattis. Fusce ac turpis sit amet lectus convallis sodales. Aenean urna mi, malesuada nec aliquet et, gravida sed urna. Ut sollicitudin efficitur faucibus. Donec ligula metus, consectetur in vulputate eget, lacinia id diam. Morbi pulvinar egestas dui, in iaculis tellus gravida at. Sed molestie mattis fringilla.</p>
+        
+                <figure class="foto-legenda">
+                    <img src="imagens/sol.jpg">
+                    <figcaption>
+                    <h3>Legenda da foto.</h3>
+                        </figcaption>
+                </figure>
+            
+                <h2>Data de Lançamento</h2>
+                <p>A data de lançamento será em março de 2023</p>
+            
+             <h2>Especificações</h2>
+                <table id="tabela">
+                    <caption>Tabela técnica <span>mar/2023</span></caption>
+
+                    <tr><td class="ce">245</td><td class="cd">Largura da banda de rodagem em milímetros.</td></tr>
+                    <tr><td class="ce">45</td><td class="cd">Altura do perfil do pneu em porcentagem da largura (45% de 245 mm).</td></tr>
+                    <tr><td rowspan="2" class="ce">R</td><td class="cd">Indica que o modelo é radial. </td></tr>
+                    <tr><td class="cd">Teste.</td></tr>
+                    <tr><td rowspan="2" class="ce">18</td><td class="cd">Tamanho do aro em polegadas. </td></tr>
+                    <tr><td class="cd">Teste 2.</td></tr>
+                    <tr><td class="ce">100</td><td class="cd">Índice de carga máxima (vai de 70 a 122).</td></tr>
+                </table>
+            
+                <h2>Video de divulgação</h2>
+                <video id="filme" controls="controls" poster="">
+                    <source src="midia/Pneu.mp4" type="video/mp4"/>
+                    ERROR
+                </video>
+         </article>
+
+        </section>
+
+        <aside id="lateral">
+            <h1>Outras coisas</h1>
+            <h2>Video</h2>
+            <video id="filmelado" controls="controls" poster="">
+                <source src="midia/Pneu.mp4" type="video/mp4"/>
+                ERROR
+            </video>
+            <h2>Novidades</h2>
+            <p>Segue o parágrafo de novidades</p>
+        </aside>
+        
+        <footer id="rodape">
+            <p>&copy; Aprendendo HTML</p> 
+            <p><a href="https://pt-br.facebook.com/" target="_blank">Facebook</a> | twitter</p>
+        </footer>
+    </div>
+</body>
+</html>

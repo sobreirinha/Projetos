@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+div#tv-radio{
+    width: 800px;
+    height: 580px; /*altura dos arquivos*/
+    margin: auto;
+    background: url(midia/tv.png) no-repeat; /*A FOTO NÃO É IGUAL AO DO CURSO EM VIDEO*/
+}
+audio#musica{/*EDITAR AUDIO*/
+    display: block;
+    position: relative;
+    left: 500px;
+    top: 510px;
+    width: 300px;
+}
+video#filme{ /*EDITAR VIDEO*/
+    display: block;
+    position: relative;
+    left: 80px;
+    top: 15px;
+    width: 600px;
+    border-radius: 10px;
+}

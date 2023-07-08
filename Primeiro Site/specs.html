@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificações</title>
+   
+        <link rel="stylesheet" href="estilo.css"/> 
+        <link rel="stylesheet" href="espe.css"/>
+</head>
+    <script language="javascript" src="funcoes.js">
+    </script>
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <hgroup>
+                <h1>Mundo Estranho</h1>
+                <h2>Subtítulo</h2>
+            </hgroup>
+            <img id="icone" src="imagens/fotomanha.jpg"/>
+            
+            <nav id="menu">
+                <h1>Menu principal</h1>
+                <ul type="disc">
+                    <li onmouseover="mudaFoto('imagens/home.jpg')" onmouseout="mudaFoto('imagens/espe.png')"><a href="site1.html">Casa</a></li>
+                    <li onmouseover="mudaFoto('imagens/espe.png')" onmouseout="mudaFoto('imagens/espe.png')"><a href="specs.html">Especificações</a></li>
+                    <li onmouseover="mudaFoto('imagens/sol.jpg')" onmouseout="mudaFoto('imagens/espe.png')"><a href="fotos.html">Fotos</a></li>
+                    <li onmouseover="mudaFoto('imagens/mult.png')" onmouseout="mudaFoto('imagens/espe.png')"><a href="multimídia.html">Multimídia</a></li>
+                    <li onmouseover="mudaFoto('imagens/tele.png')" onmouseout="mudaFoto('imagens/espe.png')"><a href="fala-sozinho.html">Fale Sozinho</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="corpo-full"> 
+            <article id="principal">
+                <header id="cabecalho-artigo">
+                
+                    <hgroup>
+                    <h3>Lorem ipsum  > Especificações</h3>
+                    <h1>Lorem Ipsum</h1>
+                    <h2>Por GSS</h2>
+                    <h3 class="direita">Atualizado 2023</h3>
+                    </hgroup>
+                </header>
+            
+                <p>245 argura da banda de rodagem em milímetros.
+                45 Altura do perfil do pneu em porcentagem da largura (neste caso, 45% de 245 mm)
+                R Indica que o modelo é radial.
+                18 Tamanho do aro em polegadas.
+                100 Índice de carga máxima vai de 70 a 122.</p>
+                
+                <section id="conteudo">
+                    <img src="imagens/pneu_espe.jpg" alt="pneu" usemap="#meumapa"/>
+                    <map name="meumapa"> 
+                        <area shape="rect" coords="31, 19, 144, 128" href="espe.html#tela" target="janela"/>
+                        <area shape="circle" coords="190, 191, 40" href="espe.html#camera" target="janela"/> 
+                        <area shape="circle" coords="308, 302 40 " href="espe.html#sensores" target="janela"/>
+                        <area shape="poly" coords="248,14,361,16,334,67,223,64" href="espe.html#gadgets" target="janela"/>
+                    </map>
+                    <iframe src="espe.html" name="janela" id="frame-espe"></iframe>
+                </section>
+            </article>
+        </section>
+
+        <footer id="rodape">
+            <p>&copy; Aprendendo HTML</p> 
+            <p><a href="https://pt-br.facebook.com/" target="_blank">Facebook</a> | <a href="https://pt-br.twitter.com/">twitter</a></p>
+        </footer>
+    </div>
+</body>
+</html>

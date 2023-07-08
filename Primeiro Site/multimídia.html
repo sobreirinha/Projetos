@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimídia</title>
+   
+        <link rel="stylesheet" href="estilo.css"/> 
+        <link rel="stylesheet" href="midia.css"/>
+</head>
+    <script language="javascript" src="funcoes.js">
+    </script>
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <hgroup>
+                <h1>Mundo Estranho</h1>
+                <h2>Subtítulo</h2>
+            </hgroup>
+            <img id="icone" src="imagens/fotomanha.jpg"/>
+            
+            <nav id="menu">
+                <h1>Menu principal</h1>
+                <ul type="disc">
+                    <li onmouseover="mudaFoto('imagens/home.jpg')" onmouseout="mudaFoto('imagens/mult.png')"><a href="site1.html">Casa</a></li>
+                    <li onmouseover="mudaFoto('imagens/espe.png')" onmouseout="mudaFoto('imagens/mult.png')"><a href="specs.html">Especificações</a></li>
+                    <li onmouseover="mudaFoto('imagens/sol.jpg')" onmouseout="mudaFoto('imagens/mult.png')"><a href="fotos.html">Fotos</a></li>
+                    <li onmouseover="mudaFoto('imagens/mult.png')" onmouseout="mudaFoto('imagens/mult.png')"><a href="multimídia.html">Multimídia</a></li>
+                    <li onmouseover="mudaFoto('imagens/tele.png')" onmouseout="mudaFoto('imagens/mult.png')"><a href="fala-sozinho.html">Fale Sozinho</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="corpo-full"> 
+            <article id="principal">
+                <header id="cabecalho-artigo">
+                
+                    <hgroup>
+                    <h3>Lorem ipsum  > Multimídia</h3>
+                    <h1>Sons e videos</h1>
+                    <h2>Por GSS</h2>
+                    <h3 class="direita">Atualizado 2023</h3>
+                    </hgroup>
+                </header>
+            
+            
+                <div id="tv-radio">
+                    <audio id="musica" controls="controls">
+                        <source src="midia/louise-attaque-j-t-emmene-au-vent.mp3" type="audio/mpeg"> 
+                        ERROR
+                    </audio>
+                    <video id="filme" controls="controls" poster="">
+                        <source src="midia/Pneu.mp4" type="video/mp4"/>
+                        ERROR
+                    </video>
+                </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4EvNxWhskf8?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+            </article>
+        </section>   
+        <footer id="rodape">
+            <p>&copy; Aprendendo HTML</p>
+            <p><a href="https://pt-br.facebook.com/" target="_blank">Facebook</a> | twitter</p>
+        </footer>
+</div>
+</body>
+</html>

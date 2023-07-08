@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+form{
+    width: 500px;
+    margin: auto;
+}
+input, textarea{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-size: 13pt;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .8)
+}
+
+input:hover, textarea:hover{
+    background-color: #dddddd;
+}
+
+legend{
+    color: #606060;
+    font-weight: bold;
+    font-size: 13pt;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+fieldset{
+    border-color: #cecece;
+    margin: 20px;
+    border-radius: 5px;
+}
+fieldset#sexo{
+    width: 150px;
+}
+
+fieldset#usuario{
+    background: url(imagens/icon_form.png) no-repeat 95% 95%;
+}
+fieldset#endereco{
+    background: url(imagens/icon_form.png) no-repeat 95% 95%;
+}
+fieldset#mensagem{
+    background: url(imagens/icon_form.png) no-repeat 95% 95%;
+}
+fieldset#pedido{
+    background: url(imagens/icon_form.png) no-repeat 95% 95%;
+}
+#cEnviar{
+    background: #0066A2;
+	color: white;
+	border-style: outset;
+	border-color: #0066A2;
+	height: 50px;
+	width: 100px;
+	font: bold15px arial,sans-serif;
+	text-shadow: none;
+    margin-top: 11px;
+    margin-bottom: 12px;
+    margin-left: 180px;
+}
+#cEnviar:hover{
+    background-color: #31a1e2;
+}

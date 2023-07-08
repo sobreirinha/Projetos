@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Sozinho</title>
+   
+        <link rel="stylesheet" href="estilo.css"/> 
+        <link rel="stylesheet" href="form.css"/>
+
+    <script language="javascript" src="/Primeiro Site/funcoes.js"></script>
+        <script>
+            function calc_total(){  
+                var qtd = parseInt(document.getElementById('cQtd').value);
+                tot= qtd * 1499;
+                document.getElementById('cTot').value = tot;
+            }
+        </script>
+ </head>   
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <hgroup>
+                <h1>Mundo Estranho</h1>
+                <h2>Subtítulo</h2>
+            </hgroup>
+            <img id="icone" src="imagens/fotomanha.jpg"/>
+            
+            <nav id="menu">
+                <h1>Menu principal</h1>
+                <ul type="disc">
+                    <li onmouseover="mudaFoto('imagens/home.jpg')" onmouseout="mudaFoto('imagens/tele.png')"><a href="site1.html">Casa</a></li>
+                    <li onmouseover="mudaFoto('imagens/espe.png')" onmouseout="mudaFoto('imagens/tele.png')"><a href="specs.html">Especificações</a></li>
+                    <li onmouseover="mudaFoto('imagens/sol.jpg')" onmouseout="mudaFoto('imagens/tele.png')"><a href="fotos.html">Fotos</a></li>
+                    <li onmouseover="mudaFoto('imagens/mult.png')" onmouseout="mudaFoto('imagens/tele.png')"><a href="multimídia.html">Multimídia</a></li>
+                    <li onmouseover="mudaFoto('imagens/tele.png')" onmouseout="mudaFoto('imagens/tele.png')"><a href="fala-sozinho.html">Fale Sozinho</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section id="corpo-full">
+            <article id="principal">
+                <header id="cabecalho-artigo">
+                
+                    <hgroup>
+                     <h3>Lorem ipsum em 2023 > Contato</h3>
+                     <h1>Formulário de Contato</h1>
+                     <h2>Por GSS</h2>
+                     <h3 class="direita">Atualizado 2023</h3>
+                    </hgroup>
+                </header>
+                        
+                    <form method="post" id="fContato" action="mailto:gustavossobreira@gmail.com" oninput="calc_total();">
+                        <fieldset id="usuario"> <legend>Identificação do Usuário</legend>
+                            <p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="20" maxlength="50" placeholder="Nome Completo"/></p>
+                            <p><label for="cSenha">Senha:</label><input type="password" name="tsenha" id="cSenha" size="20" maxlength="50" placeholder="Senha"/></p>
+                            <p><label for="cMail">E-mail:</label><input type="eMail" name="tMail" id="cMail" size="20" maxlength="50" placeholder="Email"/></p>
+                            
+                            <fieldset id="sexo"><legend>Sexo:</legend>
+                               <input type="radio" name="tSexo" id="cMasc" checked/><label for="cMasc">Masculino</label> <br/>
+                               <input type="radio" name="tSexo" id="cFem"/><label for="cFem">Feminino</label>
+                            </fieldset>
+
+                            <p><label for="cNasc">Data de Nascimento:</label><input type="date" name="tNasc" id="cNasc"/></label></p>
+                        </fieldset>
+                        
+                        <fieldset id="endereco"> <legend>Endereço do Usuário:</legend>
+                            <p><label for="cRua">Logradouro:</label> <input type="text" name="tRua" id="cRua" size="20" maxlength="100" placeholder="Rua, Av, Estrada .."/></p>
+                            <p><label for="cNum">Número:</label><input type="number" name="tNun" id="cNun" min="1" max="9999" placeholder="Número"/></p>
+                            <p><label for="cEst">Estado:</label>
+                                <select name="tEst" id="tEst">
+                                    <optgroup label="Região Sudeste"><option value="RJ">Rio de Janeiro</option>
+                                    <option value="SP" selected>São Paulo</option>
+                                    <option value="MG">Minas Gerais</option></optgroup>
+                                    <optgroup label="Região Sul"><option value="RS">Rio Grande do SUl</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="SC">Santa Catarina</option> </optgroup>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="BA">Bahia</option>
+                                </select>
+                            </p>   
+
+                            <p><label for="cCid">Cidade:</label>
+                                <input type="text" name="tCid" id="cCid" maxlength="40" size="20" placeholder="Cidade" list="cidades"/>
+                                <datalist id="cidades">
+                                    <option value="São Paulo"></option>
+                                    <option value="Biritiba Mirim"></option>
+                                    <option value="Mogi Das Cruzes"></option>
+                                </datalist>
+                            </p>
+
+                        </fieldset>   
+                        
+                        <fieldset id="mensagem"> <legend>Mensagem do Usuário</legend>
+                            <p><label for="cUrg">Grau de Urgência:</label>
+                                Mín<input type="range" id="cUrg" min="0" max="10" step="2"/>Max
+                            </p>
+                            
+                            <p><label for="cMgs">Mensagem:</label>
+                                <textarea name="tMsg" id="cMgs" cols="45" rows="5" placeholder="Mensagem"></textarea>
+                        </p>
+                        </fieldset>
+                        
+                        <fieldset id="pedido"><legend>Quero um pneu</legend>
+                           
+                            <p><input type="checkbox" name="tPed" id="cPed" checked/><label for="cPed">Gostaria de adquirir um pneu quando disponível</label></p>
+                            <p><label for="cCor">Cor:</label><input type="color" name="tCor" id="cCor" value="#0000ff"/></p>
+                            <p><label for="cQtd">Quatidade</label><input type="number" name="tQtd" id="cQtd" min="0" max="5" value="0"/></p>
+                            <p><label for="cTot">Preço total: R$ </label> <input type="text" name="tTot" id="cTot" placeholder="Total A pagar" readonly/></p>
+                        </fieldset>
+                        <input type="submit" id="cEnviar" name="tEnviar" value="Enviar"/>
+                    </form>
+            </article>
+        </section>
+
+        <footer id="rodape">
+            <p>&copy; Aprendendo HTML </p> 
+            <p><a href="https://pt-br.facebook.com/" target="_blank">Facebook</a> | twitter</p>
+        </footer>
+    </div>
+</body>
+</html>

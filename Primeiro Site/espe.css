@@ -1,0 +1,17 @@
+@charset "utf=8";
+
+section#conteudo{
+    width: 1000px;
+    margin: auto;
+}
+
+iframe#frame-espe{
+    width: 420px;
+    height: 300px;
+    border: none;
+    overflow: hidden; /*remove visualização do conteudo*/
+}
+
+iframe#frame-espe::-webkit-scrollbar{
+    display: none;
+}
