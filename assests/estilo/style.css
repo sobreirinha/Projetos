@@ -88,3 +88,9 @@
                 opacity: .7;
             }
         }
+       /* @media(max-width: 497px){
+            .head, .paragrafo, .menu{
+                width: 300px;
+                margin-left: 70px;
+            }
+        }*/
