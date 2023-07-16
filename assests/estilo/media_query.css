@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 535px) and (max-width: 1360px){
+    div.head {
+        width: 80vw;
+        height: 100px;
+        margin: auto;
+        margin-top: 10px;
+    }
+    div.paragrafo, div.menu {
+        width: 80vw;
+        height: 150px;
+        margin: auto;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 751px) and (max-width: 1360px){
+    div#redes-sociais{
+        float: left;
+        display: block;
+        margin-left: 15px;
+        margin-top: -355px;
+    }
+}
+@media screen and (min-width: 535px) and (max-width: 751px){
+    div#redes-sociais a{
+        padding: 15px;
+    }
+}
