@@ -5,7 +5,7 @@
 
 /*
 font-family:'Shadows Into Light', cursive;
-            font-family: 'Josefin Sans', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
 
 */
 *{
@@ -21,13 +21,13 @@ body, html {
 }
  /*Cabeçalho*/
 div.head{
-    width: 300px;
+    width: 75vw;
     height: 100px;
     padding: 10px;
     text-align: center;
     border-radius: 10px;
     margin-left: 40px;
-    margin-top: 10px;
+    margin-top: 20px;
     background-color: #33ccff49;
     border: 1px solid #2bb2df;
     transition: width 1s, height 1s;
@@ -41,7 +41,7 @@ div.head > h1, div.head > p{
 /*--Paragrafo e menu--*/
 
 div.paragrafo, div.menu{
-    width: 300px;
+    width: 75vw;
     padding: 10px;
     font-family: 'Josefin Sans', sans-serif;
     text-align: justify;
@@ -64,6 +64,9 @@ h2{
 }
 ul{
     padding-left: 15px;
+}
+::marker{
+    color: #1800f5;
 }
 div.menu a{
     text-decoration: none;
@@ -108,10 +111,10 @@ div#redes-sociais img:hover{
 /*Outras configurações*/
 ::-webkit-scrollbar, ::-webkit-scrollbar{
     width: 10px;
-    background-color: #f1afd088;
+    background-color:  #ff99cc;
 }
 ::-webkit-scrollbar-thumb{
     width: 10px;
     border-radius: 10px;
-    background-color: #33ccff4f;
+    background-color: #1c7fa05d;
 }
