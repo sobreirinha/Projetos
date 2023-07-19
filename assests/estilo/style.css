@@ -29,7 +29,8 @@ div.head{
     margin-left: 40px;
     margin-top: 20px;
     background-color: #33ccff49;
-    border: 1px solid #2bb2df;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.61);
+    border: 1px solid #2bb2dfc2;
     transition: width 1s, height 1s;
     transition-timing-function: ease;
 }
@@ -46,7 +47,8 @@ div.paragrafo, div.menu{
     font-family: 'Josefin Sans', sans-serif;
     text-align: justify;
     background-color: #33ccff4f;
-    border: 1px solid #2bb2df;
+    border: 1px solid #2bb2dfc9;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.61);
     border-radius: 10px;
     margin-top: 10px;
     margin-left: 44px;
@@ -94,7 +96,7 @@ div#redes-sociais{
 div#redes-sociais  img{
     width: 50px;
     border-radius: 50%;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.568);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.596);
     box-sizing: border-box;
     
 }
