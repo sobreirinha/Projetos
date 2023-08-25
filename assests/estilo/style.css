@@ -11,11 +11,11 @@ font-family: 'Josefin Sans', sans-serif;
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body, html {
     font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
-    height: 100vh;
     width: 100vw;
     line-height: 1.2;
 }
@@ -46,8 +46,7 @@ div.paragrafo, div.menu{
     padding: 10px;
     font-family: 'Josefin Sans', sans-serif;
     text-align: justify;
-    background-color: #33ccff4f;
-    border: 1px solid #2bb2dfc9;
+    background-image: linear-gradient(to right, #33ccff4f , transparent);
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.61);
     border-radius: 10px;
     margin-top: 10px;
