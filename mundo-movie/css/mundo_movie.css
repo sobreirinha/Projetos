@@ -1,0 +1,350 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/*overflow: hidden; Garante que o conteúdo não saia do card */
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #1a1a1a;
+    font-family: "Raleway", sans-serif;
+}
+header {
+    display: flex;
+    background-color: #00336680;
+    align-items: center;
+}
+.logo {
+    width: 25%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+.logo h1 {
+    color: #ffffff;
+    text-shadow: 0.1em 0.1em 0.05em #202020;
+    font-family: "Nerko One", cursive;
+    font-size: 2.9em;
+}
+/*INPUT e BUTTON*/
+.buscar{
+    width: 100%;
+    padding-left: 40px; /* Espaço para a imagem */
+    padding-right: 50px; /* Espaço para o botão */
+    background-color: rgba(0, 0, 0, 0.219); 
+    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.575); 
+    padding: 6px;
+    border-radius: 10px; 
+    font-size: 16px;
+    box-sizing: border-box; /* Garante que o padding e border sejam incluídos na largura total */
+}
+input::placeholder {
+    color: #ffffff;
+}
+input:focus {
+    outline: none; /* Remove a borda padrão de foco */
+}
+.icone_buscar {
+    width: 25px;
+    position: absolute;
+    left: 10px; /* Ajuste a posição horizontal da imagem */
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Garante que a imagem não interfira com os cliques no input */
+}
+.btn_buscar {
+    position: absolute;
+    right: 15px; /* Ajuste a posição horizontal do botão */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent; 
+    border: none;
+    padding: 9px 12px;
+    cursor: pointer;
+}
+
+.input_button {
+    position: relative;
+    display: inline-block;
+    width: 250px;
+}
+input:focus {
+    color: rgb(255, 255, 255); /* Altere para a cor desejada */
+}
+/*FIM - - INPUT e BUTTON*/
+/* MENU */
+.menu_principal {
+    width: 45%;
+}
+.menu_principal ul {
+    list-style: none;
+    display: flex;
+    margin: 10px;
+    font-family: "Raleway", sans-serif;
+}
+.menu_principal ul li {
+    margin: 10px;
+}
+.menu_principal ul  a {
+    text-decoration: none;
+    color: #cccccc;
+}
+.menu_principal ul a:hover {
+    color: #ffffff; 
+}
+/*PAINEL INICIAL*/
+.painel_principal {
+    display: flex;  /*Mecher faz os intes dentro ir no meio*/
+    flex-direction: column;
+    width: 89%;
+    background-image: url(../imagens/poster_serie_a_casa_do_dragao\(capa\).jpg);
+    height: 350px; /* Altura do contêiner */
+    background-size: cover; 
+    background-position: center top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    margin: 20px auto 10px auto; /*top, direita, botton, esquerda*/
+    border-radius: 15px;
+}
+.painel_principal li:first-child{
+    margin-right: 20px;
+}
+.painel_principal h1 {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 1%;
+    font-size: 2rem;
+}
+.p_principal {
+    margin-left: 5%;
+    margin-bottom: 1%;
+}
+.lista_info {
+    list-style: none;
+    display: flex;
+    margin-left: 5%;
+    margin-bottom: 1%;
+}
+.lista_info li {
+    background-color: rgba(141, 140, 140, 0.315);
+    padding: 5px;
+    margin-right: 6px;
+    border-radius: 25px;
+    font-size: .8rem;
+}
+.btn_assistir {
+    background-color: rgba(255, 0, 0, 0.76);
+    color: #fdfdfd;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    width: 70px;
+    margin-left: 5%;
+    margin-top: 3%;
+    padding: 5px 15px 5px 14px; /*top, direita, botton, esquerda*/
+}
+/*POPULAR*/
+.popular {
+    margin: 20px auto 10px auto; /*top, direita, botton, esquerda*/
+}
+.popular h2, .catalago h2 {
+    color: rgb(255, 255, 255);
+    margin: auto 64px auto 75px; /*top, direita, botton, esquerda*/
+}
+.movie_card {
+    display: flex;
+    flex-direction: row;
+    margin: auto 64px auto 65px; /*top, direita, botton, esquerda*/
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #00336680;
+    width: 250px;
+    box-shadow: 5px 5px 10px 1px #000000b2;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px; 
+    transition: transform 0.3s; /* Transições suaves para transformação e sombra */
+    cursor: pointer;
+}
+.card:hover {
+    transform: scale(1.02); 
+}
+.card h3 {
+    font-size: 0.9rem;
+    padding: 5px;
+    align-self: flex-start;
+    margin: 5px;
+    color: white;
+}
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ajusta a imagem dentro da div sem distorcer */
+    object-fit: cover; /* Faz com que a imagem cubra a área do card sem distorcer */
+}
+.movie_card_catalago {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto 64px auto 65px; /*top, direita, botton, esquerda*/
+}
+.card_catalago:hover{
+    transform: scale(1.02); 
+}
+.card_catalago h3 {
+    font-size: 0.9rem;
+    padding: 5px;
+    align-self: flex-start;
+    margin: 5px;
+    color: white;
+}
+.card_catalago img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ajusta a imagem dentro da div sem distorcer */
+    object-fit: cover; /* Faz com que a imagem cubra a área do card sem distorcer */
+}
+.card_catalago{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #00336680;
+    width: 250px;
+    box-shadow: 5px 5px 10px 1px #000000b2;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px; 
+    transition: transform 0.3s; /* Transições suaves para transformação e sombra */
+    cursor: pointer;
+}
+/*Busca de filmes*/
+.container {
+    display: flex;
+    flex-direction: row;
+}
+.resultado_section {
+    width: 80%;
+}
+.aside_resultado {
+    margin-top: 3.1%;
+    width: 10%;
+}
+.resultado_busca { /*CARD na busca*/
+    width: 650px;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 4%;
+    margin-left: 4%;
+    display: flex;
+}
+.resultado_busca img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ajusta a imagem dentro da div sem distorcer */
+    object-fit: cover;
+}
+.descricao_resultado {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px 0px 20px; /*top, direita, botton, esquerda*/
+}
+.descricao_resultado h2 {
+    margin-bottom: 20px;
+}
+.descricao_resultado p {
+    margin-bottom: 5px;
+}
+.card_aside {
+    background-color: #888787d0;
+    width: 150px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.mais_filmes {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(199, 198, 198);
+}
+.conteudo_extra{
+    background-color: #0d2740;
+    padding: 10px;
+    color: white;
+}
+.mais_filmes a {
+    padding: 5px;
+    margin-left: 5px;
+    color: black;
+    text-decoration: none;
+}
+.mais_filmes a:last-child {
+    text-align: center;
+    margin-bottom: 5px;
+}
+.mais_filmes a:hover {
+    text-decoration: underline;
+}
+/*footer*/
+footer {
+    background-color: #333;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    border-top: 1px solid #444;
+    margin-top: 5% ;
+}
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Estilo do pop-up */
+.popup {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.788); /* Cor de fundo semi-transparente */
+}
+        
+/* Conteúdo do pop-up */
+.popup-content {
+    background-color: #fd0000;
+    color: rgb(238, 255, 0);
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 15px;
+    width: 80%; /* Largura do pop-up */
+    max-width: 500px;
+    position: relative;
+}
+        
+/* Botão de fechar */
+.close {
+    color: #fcfcfc;
+    float: right;
+    margin-top: -20px;
+    margin-right: -5px;
+    font-size: 30px;
+    font-weight: bold;
+}
+        
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+                
+input.buscar {
+    color: white; /* Define a cor do texto digitado */
+}

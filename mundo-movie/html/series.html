@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/mundo_movie.css">
+    <title>Mundo Movies</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Mundo Movie</h1>
+        </div>
+        <nav class="menu_principal">
+            <ul>
+                <a href="/html/mundo_movie.html"><li>Inicio</li></a>
+                <a href="/html/filmes.html"><li>Filmes</li></a>
+                <a href="/html/series.html"><li>Series</li></a>
+                <a href="/html/busca.html"><li>Outros</li></a>
+            </ul>
+        </nav>
+        <div class="input_button">
+            <input class="buscar" type="text" name="" placeholder="Buscar" id="campo-pesquisa">
+            <button class="btn_buscar" onclick="pesquisar()">
+                <img class="icone_buscar" src="/imagens/search.png" alt="Icone de procura">
+            </button>
+        </div>
+    </header>
+
+    <section class="popular">
+        <h2>Series</h2>
+        <div class="movie_card_catalago" id= "series_cards">
+        </div>
+    </section>
+
+    <footer>
+        <p>2024 | Todos os direitos reservados | Site com fim de aprendizagem</p>
+    </footer>
+
+    <script src="/js/mundo_movie_dados.js"></script>
+    <script src="/js/mundo_movie.js"></script>     
+    <script src="/js/cards_series.js"></script>  
+
+    <script>
+        function pesquisar() {
+            const campoPesquisa = document.getElementById('campo-pesquisa').value;
+            sessionStorage.setItem('query', campoPesquisa);
+            window.location.href = '/html/busca.html';
+        }
+    </script>
+
+</body>
+</html>
