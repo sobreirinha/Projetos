@@ -348,3 +348,8 @@ footer p {
 input.buscar {
     color: white; /* Define a cor do texto digitado */
 }
+.resultado_nao_encontrado {
+    color: white;
+    margin-top: 50px;
+    margin-left: 50px;
+}

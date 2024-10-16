@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/mundo_movie.css">
+    <link rel="stylesheet" href="../css/mundo_movie.css">
     <title>Mundo Movies</title>
 </head>
 <body>
@@ -13,16 +13,16 @@
         </div>
         <nav class="menu_principal">
             <ul>
-                <a href="/html/mundo_movie.html"><li>Inicio</li></a>
-                <a href="/html/filmes.html"><li>Filmes</li></a>
-                <a href="/html/series.html"><li>Series</li></a>
-                <a href="/html/busca.html"><li>Outros</li></a>
+                <a href="../html/mundo_movie.html"><li>Inicio</li></a>
+                <a href="../html/filmes.html"><li>Filmes</li></a>
+                <a href="../html/series.html"><li>Series</li></a>
+                <a href="../html/busca.html"><li>Outros</li></a>
             </ul>
         </nav>
         <div class="input_button">
             <input class="buscar" type="text" name="" placeholder="Buscar" id="campo-pesquisa">
             <button class="btn_buscar" onclick="pesquisar()">
-                <img class="icone_buscar" src="/imagens/search.png" alt="Icone de procura">
+                <img class="icone_buscar" src="../imagens/search.png" alt="Icone de procura">
             </button>
         </div>
     </header>
@@ -50,24 +50,24 @@
         <div class="movie_card">
             <div class="card">
                 <a href="https://www.google.com.br/" target="_blank">
-                <img src="/imagens/poster_a_esperanca.png" alt="Poster Jogos Vorazes: A esperaça">
+                <img src="../imagens/poster_a_esperanca.png" alt="Poster Jogos Vorazes: A esperaça">
                 </a>
                 <h3>Jogos Vorazes: A esperaça</h3>
             </div>
             <div class="card">
-                <img src="/imagens/poster_nos.png" alt="Poster Nós">
+                <img src="../imagens/poster_nos.png" alt="Poster Nós">
                 <h3>Nós</h3>
             </div>
             <div class="card">
-                <img src="/imagens/poster_barbie.png" alt="Poster Barbie">
+                <img src="../imagens/poster_barbie.png" alt="Poster Barbie">
                 <h3>Barbie</h3>            
             </div>
             <div class="card">
-                <img src="/imagens/poster_serie_a_casa_do_dragao.webp" alt="Poster A casa do dragão">
+                <img src="../imagens/poster_serie_a_casa_do_dragao.webp" alt="Poster A casa do dragão">
                 <h3>A casa do dragão</h3>
             </div>
             <div class="card">
-                <img src="/imagens/poster_avatar_o_caminho_da_agua.png" alt="Poster Avatar: O caminho da água">
+                <img src="../imagens/poster_avatar_o_caminho_da_agua.png" alt="Poster Avatar: O caminho da água">
                 <h3>Avatar: O caminho da água</h3>
             </div>
         </div>
@@ -77,40 +77,40 @@
         <div class="movie_card_catalago">
             <div class="card_catalago">
                 <a href="https://www.google.com.br/" target="_blank">
-                <img src="/imagens/poster_pearl.png" alt="Pearl">
+                <img src="../imagens/poster_pearl.png" alt="Pearl">
                 </a>
                 <h3>Pearl</h3>
             </div>
             <div class="card_catalago">
-                <img src="/imagens/poster_aladdin.png" alt="Aladdin">
+                <img src="../imagens/poster_aladdin.png" alt="Aladdin">
                 <h3>Aladdin</h3>
             </div>
             <div class="card_catalago">
-                <img src="/imagens/poster_titanic.png" alt="Titanic">
+                <img src="../imagens/poster_titanic.png" alt="Titanic">
                 <h3>Titanic</h3>            
             </div>
             <div class="card_catalago">
-                <img src="/imagens/poster_em_chamas.png" alt="Jogos Vorazes: Em chamas">
+                <img src="../imagens/poster_em_chamas.png" alt="Jogos Vorazes: Em chamas">
                 <h3>Jogos Vorazes: Em chamas</h3>
             </div>
             <div class="card_catalago">
-                <img src="/imagens/poster_serie_a_casa_do_dragao.webp" alt="A casa do Dragão">
+                <img src="../imagens/poster_serie_a_casa_do_dragao.webp" alt="A casa do Dragão">
                 <h3>A casa do Dragão: 1°temporada</h3>
             </div>
             <div class="card_catalago">
-                <img src="/imagens/poster_a_esperanca.png" alt="Jogos Vorazes: A esperaça">
+                <img src="../imagens/poster_a_esperanca.png" alt="Jogos Vorazes: A esperaça">
                 <h3>Jogos Vorazes: A esperaça</h3>
             </div>
             <div class="card_catalago">
-                <img src="/imagens/poster_nos.png" alt="Poster, nós">
+                <img src="../imagens/poster_nos.png" alt="Poster, nós">
                 <h3>Nós</h3>
             </div>
             <div class="card_catalago">
-                <img src="/imagens/poster_barbie.png" alt="Poster, Barbie">
+                <img src="../imagens/poster_barbie.png" alt="Poster, Barbie">
                 <h3>Barbie</h3>
             </div>
             <div class="card_catalago">
-                <img src="/imagens/poster_avatar_o_caminho_da_agua.png" alt="poster, Avatar o caminho da agua">
+                <img src="../imagens/poster_avatar_o_caminho_da_agua.png" alt="poster, Avatar o caminho da agua">
                 <h3>Avatar o caminho da agua</h3>
             </div>
         </div>
@@ -118,13 +118,13 @@
     <footer>
         <p>2024 | Todos os direitos reservados | Site com fim de aprendizagem</p>
     </footer>
-   <script src="pop-up.js"></script>
+   <script src="../js/pop-up.js"></script>
 
     <script>
         function pesquisar() {
             const campoPesquisa = document.getElementById('campo-pesquisa').value;
             sessionStorage.setItem('query', campoPesquisa);
-            window.location.href = '/html/busca.html';
+            window.location.href = '../html/busca.html';
         }
     </script>
 </body>

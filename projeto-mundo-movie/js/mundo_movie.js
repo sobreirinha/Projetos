@@ -21,7 +21,7 @@ function pesquisar(){
     //let tags = "";
 
     if(!campoPesquisa){ //vazio
-        section.innerHTML = "<p>Digite algo para pesquisar</p>"
+        section.innerHTML = `<p class="resultado_nao_encontrado">Digite algo para pesquisar</p>`
         return;
     };
 
@@ -45,12 +45,12 @@ function pesquisar(){
                 </div>
             </div>
         `;
-        };
-        //console.log(dado.titulo.includes(campoPesquisa));
+        }
     };
-
+    
     if (!resultados){ // se não tiver resultado faça
-        resultados =  "<p>Não encontrado</p>";
+        resultados =  `<p class="resultado_nao_encontrado">Pesquisa de ${campoPesquisa}, não encontrado.</p>`;
     };
     section.innerHTML = resultados;
+    //console.log(dado.titulo.includes(campoPesquisa));
 };
