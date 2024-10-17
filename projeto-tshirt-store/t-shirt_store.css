@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Slab:wght@100..900&display=swap');
+
+* { margin: 0; padding: 0; }
+
+.txt_center { text-align: center; }
+.font_raiz { font-family: "Roboto Slab", serif; }
+.sombra { box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2); }
+
+header {
+    display: flex; 
+    align-items: center; 
+    width: 94.7vw; 
+    height: 100px;
+    justify-content: center;
+}
+nav { width: 33%; }
+nav ul {
+    display: flex; 
+    list-style: none;
+}
+nav ul li {
+    padding: 10px; 
+    cursor: pointer; 
+    font-size: 5vh; 
+    font-weight: 200; 
+}
+nav ul li:hover {
+    background-color: rgba(223, 220, 220, 0.336); 
+    border-radius: 20px; 
+}
+h1 {
+    width: 67%; 
+    padding: 10px; 
+    margin-left: 40px; 
+    font-size: 8vh; 
+}
+h1:hover { cursor: pointer; }
+
+.tela_inicial { 
+    display: flex; 
+    padding: 20px; 
+}
+.esconder { display: none; }
+.info {
+    display: flex; 
+    align-items: center; 
+    width: 80%; 
+    background: linear-gradient(to left, #c4cac1, #cecece); 
+    border-radius: 15px; 
+    font-size: 200; 
+}
+.preco {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    margin-left: 20px;
+}
+.colocar_esquerda { float: left; padding: 15px; }
+.info h2 { font-size: 8vh; color: #5f635e; }
+.info p { color: #3e413d; }
+.btn_cinza, .btn_branco, .btn_lado{
+    margin: 50px 0 10px; 
+    border: none; 
+    padding: 15px; 
+    border-radius: 20px; 
+    transition: transform 0.5s ease; 
+}
+.btn_cinza { background-color: rgb(88, 88, 88); color: #fff; }
+.btn_branco { background-color: white; color: rgb(88, 88, 88); }
+
+.btn_branco { margin-left: 20px; }
+.btn_branco:hover, .btn_cinza:hover {
+    cursor: pointer; 
+    transform: scale(1.2); 
+}
+.camisa_inicial {
+    width: 100%; 
+    float: right; 
+    border-radius: 0 15px 15px 0; 
+}
+
+.h2_lado { 
+    font-size: 5rem; 
+    font-family: Georgia, serif; 
+    font-weight: 100; 
+}
+.btn_lado {
+    font-size: 2rem; 
+    color: #fff; 
+    background-color: #3e413d; 
+    cursor: pointer; 
+}
+.btn_lado:hover {
+    transform: rotatez(10deg); 
+}
+
+.grid_camisas {
+    display: flex; 
+    padding: 20px; 
+}
+.camisas {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 2.1rem; 
+}
+.camisas img {
+    width: 23%; 
+    height: auto; 
+    transition: transform 0.5s ease; 
+}
+.camisas img:hover { cursor: pointer; transform: scale(1.1); }
+.camisas_buy { border-radius: 10%; }
+.btn {
+    padding: 10px 15px; 
+    background-color: #838883; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin-left: 10px;
+}
+.btn:hover { background-color: #969c96;}
+.light-theme { background-color: #f4f4f4; color: #333; }
+.dark-theme { background-color: #000000; color: #f4f4f4; }
+.dark-theme h1 { color: #fcfcfc; }
+.dark {color: black;}
+
+footer { padding: 30px; }
+
+@media (max-width: 768px) {
+    .camisas img { width: 40%; }
+    .info { width: 97%; }
+    h1 { width: 55%; margin-left: 2px; font-size: 6vh; }
+    nav ul li { font-size: 3.5vh; }
+    .preco { display: none; }
+    .grid_camisas { width: 129%; }
+    .esconder { display: block; }
+    nav {width: 80%; display: flex; justify-content: end;}
+    .modoEscuro {width: 25%;}
+    header{width: 114vw;}
+    .tela_inicial{width: 110vw;}
+}
+
+@media (max-width: 480px) {
+    header {
+        display: flex; 
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+    h1 { 
+        width: 100%; 
+        text-align: center; 
+        display: flex; 
+        justify-content: center; 
+    }
+    nav {justify-content: space-evenly;}
+    nav ul li { font-size: 1.1rem; }
+
+    .tela_inicial{width: auto; justify-content: center;}
+    .camisas{   justify-content: center;}
+    .camisas img { width: 40%; }
+    .grid_camisas { width: auto;}
+    .colocar_esquerda h2 { font-size: 1.5rem; }
+    .info { flex-direction: column; }
+    .camisa_inicial { width: 60%; float: none; border-radius: 15px 15px 0 0; margin-bottom: -3px;}
+    .modoEscuro{width: auto;}
+}
+
+@media(min-width: 2228px){
+    h1 {
+        width: 50%;
+    }
+}
+
+/*h1 50%*/
