@@ -29,7 +29,9 @@ Para rodar a interface localmente, siga os passos abaixo:
    ```bash
    git clone https://github.com/sobreirinha/projetos.git
    cd projetos
-   
+
+
+## Como usar  
 2. Como Usar
 Navegue pela interface para ver os projetos disponíveis.
 Clique em um projeto para obter mais detalhes e instruções.
