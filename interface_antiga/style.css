@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;1,200&display=swap');
+
+/*
+font-family:'Shadows Into Light', cursive;
+font-family: 'Josefin Sans', sans-serif;
+
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
+    width: 100vw;
+    line-height: 1.2;
+}
+ /*Cabeçalho*/
+div.head{
+    width: 75vw;
+    height: 100px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-top: 20px;
+    background-color: #33ccff49;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.61);
+    border: 1px solid #2bb2dfc2;
+    transition: width 1s, height 1s;
+    transition-timing-function: ease;
+}
+div.head > h1, div.head > p{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.8em;
+    margin-top: 10px;
+}   
+/*--Paragrafo e menu--*/
+
+div.paragrafo, div.menu{
+    width: 75vw;
+    padding: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: justify;
+    background-image: linear-gradient(to right, #33ccff4f , transparent);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.61);
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 44px;
+    transition: width 1s, height 1s;
+    transition-timing-function: ease;
+}
+div.head:hover, div.paragrafo:hover, div.menu:hover{
+    background-color: #f1afd088;
+    border: 1px solid #f1afd088;
+}
+h2{
+    font-family: 'Shadows Into Light', cursive;
+    text-align: center;
+    padding-bottom: 5px;
+}
+ul{
+    padding-left: 15px;
+}
+::marker{
+    color: #1800f5;
+}
+div.menu a{
+    text-decoration: none;
+    color: rgb(51, 50, 50);
+}
+div.menu a:hover{
+    background-color: #ff99cc;
+    padding: 2px;
+    border-radius: 5px;
+   
+}
+
+/*--Menu Redes Sociais--*/
+
+div#redes-sociais{
+    display: inline-flex;
+    width: 100%;
+    max-width: 70px;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-left: 30px;
+    transition: width 1s, height 1s;
+    transition-timing-function: ease;
+}
+div#redes-sociais  img{
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.596);
+    box-sizing: border-box;
+    
+}
+div#redes-sociais a{
+    padding: 5px;
+
+}
+div#redes-sociais img:hover{
+    border: 2px solid rgba(255, 255, 255, 0.938);
+    transform: rotate(360deg);
+    transition: transform 1s, border 1s;
+}
+
+/*Outras configurações*/
+::-webkit-scrollbar, ::-webkit-scrollbar{
+    width: 10px;
+    background-color:  #ff99cc;
+}
+::-webkit-scrollbar-thumb{
+    width: 10px;
+    border-radius: 10px;
+    background-color: #1c7fa05d;
+}
+
+@media screen and (min-width: 535px) and (max-width: 1760px){
+    div.head {
+        width: 50vw;
+        height: 100px;
+        margin: auto;
+        margin-top: 10px;
+        font-size: .9em;
+    }
+    div.paragrafo, div.menu {
+        width: 50vw;
+        margin: auto;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 751px) and (max-width: 1760px){
+    div#redes-sociais{
+        float: left;
+        display: block;
+        margin-left: 15px;
+        margin-top: -430px;
+    }
+}
+@media screen and (min-width: 535px) and (max-width: 751px){
+    div#redes-sociais a{
+        padding: 15px;
+    }
+}

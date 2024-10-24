@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Painel de projetos</title>
+   <link rel="shortcut icon" href="imagens/lapis.png" type="image/x-icon">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <header>
+      <h1 class="nome">Gustavo Sobreira</h1>
+   </header>
+   <main>
+
+      <section>
+         <div class="sobre">
+            <h2>Sobre</h2> 
+            <p>Estou aprendendo JAVASCRIPT, PYTHON e CSS</p>
+            <p>Isto não é um portfólio</p> 
+         </div>
+
+         <div class="redes_sociais">
+            <h2>Redes Sociais</h2>
+            <ul>
+               <li>
+                  <a href="https://github.com/sobreirinha" target="_blank"><img src="imagens/logo-github.jpg" alt="Github"> </a>
+               </li>
+               <li>
+                  <a href="https://br.linkedin.com/in/gustavo-sobreira" target="_blank"><img src="imagens/logo-linkedin.jpg" alt="LinkedIn"> </a>
+               </li>
+               <li>
+                  <a href="https://www.instagram.com/tavos_sobreira/" target="_blank"><img src="imagens/logo-instagram.jpg" alt="Instagram"></a>
+               </li>
+            </ul>   
+         </div>
+
+         <div class="projeto_carrosel" id="projeto_carrosel">
+            <h2>Projetos</h2>
+            <div class="lista_projetos" id="lista_projetos">
+               <!--Aqui vem todos os projetos-->
+               <!-- Acrescentar o projeto do modo escuro https://sobreirinha.github.io/projetos/projeto-tshirt-store/t-shirt_store.html-->
+            </div>
+
+
+
+         <button class="nav prev" id="prev" aria-label="Projeto anterior">&#10094;</button>
+         <button class="nav next" id="next" aria-label="Próximo projeto">&#10095;</button>
+         </div>
+      </section>
+   </main>
+
+<script src="js/dados.js"></script>  
+<script src="js/carrosel.js"></script>
+
+</body>
+</html>

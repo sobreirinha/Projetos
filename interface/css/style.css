@@ -1,0 +1,171 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{margin: 0; padding: 0;}
+:root {
+   --cor-1: #39afdd; /*não usada*/
+   --cor-2: rgb(50, 152, 193); /*usada*/
+   --cor-3: #2B82A5; /*usada*/
+   --cor-4: #246C89; /*não usada*/
+   --cor-5: #1C566D; /*não usada*/
+   --cor-6: #154051; /*usada*/
+   --cor-7: #0E2934; /*usada*/
+   --cor-8: #7671FA;/*não usada*/
+   --cor-9: #E5EAF3; /*usada*/
+   --cor-10: #07244C; /*não usada*/
+   --cor--11: #7E7F9C; /*não usada*/
+}
+
+body {
+   /*background-color: var(--cor-7);*/
+   background: linear-gradient(to bottom, #07244C, #154051,#246C89);
+   font-family: "Montserrat Alternates", sans-serif;
+   height: 100vh;
+}
+header {
+   background: var(--cor-1);
+   box-shadow:  0 4px 8px rgba(50, 153, 193, 0.829);
+}
+.nome {
+   padding: 10px;
+   color: var(--cor-9);
+}
+
+/* Reaplicado*/
+main, .sobre, .redes_sociais, .projeto_carrosel {
+   margin-top: 15px;
+}
+main {
+   margin-bottom: 15px;
+}
+.sobre, .redes_sociais, .projeto_carrosel {
+   background-color: var(--cor-1);
+   color: var(--cor-9);
+   padding: 10px;
+   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+   border-radius: 5px;
+   box-shadow:  0 4px 8px rgba(57, 175, 221, 0.726);
+}
+.sobre h2, .redes_sociais h2, .projeto_carrosel h2 {
+   border-bottom: 1px solid var(--cor-6);
+   font-size: 1.6rem;
+
+}
+
+.sobre p, .projeto_carrosel p {
+   margin-top: 5px;
+   font-size: 1.1rem;
+}
+
+.redes_sociais a {
+   text-decoration: none;
+   color: var(--cor-9);
+}
+.redes_sociais ul{
+   margin-top: 15px;
+   margin-bottom: 10px;
+   display: flex;
+   justify-content: center;
+   padding: 0;
+}
+.redes_sociais li {
+   list-style-type: none;
+   margin: 0 15px;  
+}
+.redes_sociais img{
+   width: 90px;
+   height: auto;
+   border-radius: 50%;
+   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.596);
+   box-sizing: border-box;
+   transition: transform 0.3s;
+   cursor: pointer;
+}
+.redes_sociais img:hover{
+   transform:scale(1.1);
+}
+.lista_projetos {
+   display: flex;
+}
+.esconder {
+   display: none;
+}
+.projeto_carrosel {
+   display: flex;              
+   flex-direction: column; 
+   position: relative;        
+}
+.projeto a {
+   display: flex;
+   justify-content: center;
+}
+.info-projeto{
+   color: var(--cor-9);
+   text-decoration: none;
+}
+.info-projeto p:last-child{
+   margin-bottom: 15px;
+}
+.info-projeto h3 {
+   margin-top: 10px;
+}
+.gif-projeto {
+   margin-top: 5px;
+   border-radius: 5px;
+   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.596);
+}
+.nav {
+   border: none;
+   color: var(--cor-9);
+   font-size: 2rem;
+   background-color: transparent;
+   cursor: pointer;
+   position:absolute;
+   width: 20px;
+   top: 50%; /* Centraliza verticalmente */
+   transform: translateY(-50%); /* Ajusta para que o botão fique realmente centralizado */  
+   transition: transform 0.3s;
+}
+.nav:hover{
+   transform: translateY(-50%) scale(1.1);
+}
+.prev {
+   left: 10px; /* Ajuste a posição da seta esquerda */
+}
+
+.next {
+   right: 10px; /* Ajuste a posição da seta direita */
+}
+@media (max-width: 320px){
+   .redes_sociais img{
+      width: 50px;
+   }
+   .gif-projeto{
+      width: 80%;
+   }
+}
+@media (min-width: 321px){
+   main {
+      margin-top: 1px;
+   }
+   .nome {
+      margin-left: 30px;
+   }
+   section {
+      display: flex;
+      flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se necessário */
+      justify-content: center; /* Centraliza as divs horizontalmente */
+      gap: 20px; /* Não sei usar isso*/
+  }
+  .redes_sociais img {
+      width: 50px;
+   }
+   .sobre {
+      width: 390px;
+   }
+   .projeto_carrosel {
+      width: 50%;
+   }
+   .gif-projeto {
+      width: 60%;
+   }
+}
