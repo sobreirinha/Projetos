@@ -32,6 +32,7 @@ Para rodar a interface localmente, siga os passos abaixo:
 
 
 ## Como usar  
+
 2. Como Usar
 Navegue pela interface para ver os projetos disponíveis.
 Clique em um projeto para obter mais detalhes e instruções.
