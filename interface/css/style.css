@@ -1,25 +1,17 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{margin: 0; padding: 0;}
+*{ margin: 0; padding: 0; }
 :root {
-   --cor-1: #39afdd; /*não usada*/
-   --cor-2: rgb(50, 152, 193); /*usada*/
-   --cor-3: #2B82A5; /*usada*/
-   --cor-4: #246C89; /*não usada*/
-   --cor-5: #1C566D; /*não usada*/
-   --cor-6: #154051; /*usada*/
-   --cor-7: #0E2934; /*usada*/
-   --cor-8: #7671FA;/*não usada*/
-   --cor-9: #E5EAF3; /*usada*/
-   --cor-10: #07244C; /*não usada*/
-   --cor--11: #7E7F9C; /*não usada*/
+   --cor-1: #39afdd; /*usada*/
+   --cor-2: #246C89; /* Background gradient*/
+   --cor-3: #154051; /*usada*/
+   --cor-4: #E5EAF3; /*usada*/
+   --cor-5: #07244C; /* Background gradient*/
 }
-
 body {
-   /*background-color: var(--cor-7);*/
    background: linear-gradient(to bottom, #07244C, #154051,#246C89);
    font-family: "Montserrat Alternates", sans-serif;
-   height: 100vh;
+   height: 100%;
 }
 header {
    background: var(--cor-1);
@@ -27,7 +19,7 @@ header {
 }
 .nome {
    padding: 10px;
-   color: var(--cor-9);
+   color: var(--cor-4);
 }
 
 /* Reaplicado*/
@@ -39,18 +31,16 @@ main {
 }
 .sobre, .redes_sociais, .projeto_carrosel {
    background-color: var(--cor-1);
-   color: var(--cor-9);
+   color: var(--cor-4);
    padding: 10px;
    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
    border-radius: 5px;
    box-shadow:  0 4px 8px rgba(57, 175, 221, 0.726);
 }
 .sobre h2, .redes_sociais h2, .projeto_carrosel h2 {
-   border-bottom: 1px solid var(--cor-6);
+   border-bottom: 1px solid var(--cor-3);
    font-size: 1.6rem;
-
 }
-
 .sobre p, .projeto_carrosel p {
    margin-top: 5px;
    font-size: 1.1rem;
@@ -58,13 +48,13 @@ main {
 
 .redes_sociais a {
    text-decoration: none;
-   color: var(--cor-9);
+   color: var(--cor-4);
 }
 .redes_sociais ul{
    margin-top: 15px;
    margin-bottom: 10px;
    display: flex;
-   justify-content: center;
+   justify-content: space-around;
    padding: 0;
 }
 .redes_sociais li {
@@ -80,15 +70,8 @@ main {
    transition: transform 0.3s;
    cursor: pointer;
 }
-.redes_sociais img:hover{
-   transform:scale(1.1);
-}
-.lista_projetos {
-   display: flex;
-}
-.esconder {
-   display: none;
-}
+.redes_sociais img:hover{ transform:scale(1.1); }
+.lista_projetos { display: flex; }
 .projeto_carrosel {
    display: flex;              
    flex-direction: column; 
@@ -99,7 +82,7 @@ main {
    justify-content: center;
 }
 .info-projeto{
-   color: var(--cor-9);
+   color: var(--cor-4);
    text-decoration: none;
 }
 .info-projeto p:last-child{
@@ -115,7 +98,7 @@ main {
 }
 .nav {
    border: none;
-   color: var(--cor-9);
+   color: var(--cor-4);
    font-size: 2rem;
    background-color: transparent;
    cursor: pointer;
@@ -135,15 +118,8 @@ main {
 .next {
    right: 10px; /* Ajuste a posição da seta direita */
 }
-@media (max-width: 320px){
-   .redes_sociais img{
-      width: 50px;
-   }
-   .gif-projeto{
-      width: 80%;
-   }
-}
-@media (min-width: 321px){
+
+@media (max-width: 768px){
    main {
       margin-top: 1px;
    }
@@ -159,13 +135,46 @@ main {
   .redes_sociais img {
       width: 50px;
    }
-   .sobre {
-      width: 390px;
+   .sobre, .redes_sociais, .projeto_carrosel, .gif-projeto {
+      width: 80%;
    }
-   .projeto_carrosel {
-      width: 50%;
+}
+@media (min-width: 769px){
+   main { 
+      display: flex;
+      justify-content: center; 
    }
-   .gif-projeto {
+   section{
+      display: flex;
+      flex-wrap: wrap; 
+      gap: 20px; 
       width: 60%;
    }
+   .sobre, .redes_sociais{
+      flex: 1;
+   }
+   .projeto_carrosel{
+      flex: 2;
+      margin-bottom: 25px;
+   }
+   .redes_sociais img {
+      width: 50px;
+   }
+   .gif-projeto {
+      width: 500px;
+   }
+   .lista_projetos {
+      display: flex;
+      justify-content: center;
+   }
+}
+/*Outras configurações*/
+::-webkit-scrollbar, ::-webkit-scrollbar{
+   width: 10px;
+   background-color: var(--cor-3);
+}
+::-webkit-scrollbar-thumb{
+   width: 10px;
+   border-radius: 10px;
+   background-color: var(--cor-2);
 }
