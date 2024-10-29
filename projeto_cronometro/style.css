@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box;}
+
+body {
+   width: 100%;
+   height: 100%;
+   background: hsl(225, 100%, 94%);
+   display: flex;
+   justify-content: center;
+   background-size: 500% 100%;
+   font-family: "Zen Dots", sans-serif;
+}
+section {
+   margin-bottom: 2rem;  
+   margin-top: 1.7rem;
+}
+.cronometro {
+   height: 250px;
+   width: 500px;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+.cronometro-container {
+   display: flex;
+   flex-direction: column;
+   width: 500px;
+   background: transparent;
+   box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
+   border-radius: 3px;
+}
+.cronometro div {
+   width: 150px;
+   height: 170px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   color: white;
+   background: rgba(5, 5, 5, 0.9);
+   box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+   border-radius: 7px;
+   letter-spacing: 3px;
+}
+.cronometro span {
+   font-weight: bolder;
+   font-size: 48px;
+}
+#milliseconds {
+   font-size: 40px;
+}
+
+/* titulo */
+.titulo {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 19px;
+   font-weight: bolder;
+   color: hsl(224, 23%, 55%);
+   margin-top: 1rem;
+}
+/* BOTÕES */
+.buttons {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 1rem;
+   margin-bottom: 1.7rem;
+}
+.btn {
+   padding: 10px 20px;
+   font-size: 18px;
+   font-weight: bold;
+   cursor: pointer;
+   color: white;
+   background: rgba(5, 5, 5, 0.9);
+   box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+   border-radius: 3px;
+   border: none; 
+   transition: all 0.2s ease-in-out;
+}
+.btn:hover {
+   transform: scale(1.1);
+}
+#startBtn, #lapBtn {
+   background-color: #175cff;
+   color: #f1f1f1;
+}
+#resetBtn:hover, #resetLapBtn:hover {
+   background-color: rgb(248, 59, 59);
+}
+#pauseBtn, #resumeBtn {
+   display: none;
+   background-color: #175cff;
+}
+
+/* Voltas */
+.lap{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin-bottom: .5rem;
+}
+ul {
+   list-style: none;
+}
+li {
+   margin-top: .4rem;
+   margin-bottom: .4rem;
+   letter-spacing: 1px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Cronômetro</title>
+   <link rel="shortcut icon" href="relogio.png" type="image/x-icon">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <main>
+      <section>
+         <div class="cronometro-container">
+            <div class="titulo"> 
+               <h1>CRONÔMETRO</h1>
+            </div>
+            <div class="cronometro">
+               <div>
+                  <span id="minutes">00</span>
+               </div>
+         
+               <div>
+                  <span id="seconds">00</span>
+               </div>
+         
+               <div>
+                  <span id="milliseconds">000</span>
+               </div>
+
+            </div>
+               <div class="buttons">
+                  <button class="btn" id="startBtn" aria-label="Iniciar cronômetro">Iniciar</button>
+                  <button class="btn" id="pauseBtn" aria-label="Pausar cronômetro">Pausar</button>
+                  <button class="btn" id="resumeBtn" aria-label="Continuar cronômetro">Continuar</button>
+                  <button class="btn" id="resetBtn" aria-label="Resetar cronômetro">Resetar</button>
+               </div> 
+
+               <div class="lap">
+                  <div class="buttons">
+                     <button class="btn" id="lapBtn" aria-label="Volta">Volta</button>
+                     <button class="btn" id="resetLapBtn" aria-label="Resetar volta">Resetar Voltas</button>                 
+                  </div>
+ 
+                  <ul id="lapList"></ul>                  
+               </div>
+
+         </div>
+      </section>
+   </main>
+<script src="app.js"></script>
+</body>
+</html>
