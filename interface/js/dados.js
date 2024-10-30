@@ -68,6 +68,13 @@ const projetos = [
       nomeProjeto: "T-shirt Store",
       linguagem: "JS, HTML, CSS",
       descricao: "Aplicando modo escuro."
+   },
+   {
+      imagem: "imagens/projeto_cronometro.gif",
+      url: "https://sobreirinha.github.io/projetos/projeto_cronometro/index.html",
+      nomeProjeto: "Cronômetro",
+      linguagem: "JS, HTML, CSS",
+      descricao: "Cronômetro digital, que permite cronometrar voltas, ideal para treinos e competições."
    }
 ];
 
