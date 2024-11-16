@@ -113,11 +113,11 @@ button {
    font-family: "Amatic SC", sans-serif;
    cursor: pointer;
    box-shadow:  1px 10px 16px 5px rgba(0, 0, 0, 0.2);
-   transition: transform 0.3s ease;
+   transition: transform 0.4s ease;
 }
 button:hover {
    background-color: #1d132c;
-   transform: translateX(-5px);
+   transform: scale(0.9);
 }
 /* footer */
 footer { font-size: 11px; text-align: center; margin-top: 3rem;}
