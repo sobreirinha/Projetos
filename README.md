@@ -32,4 +32,4 @@ Esta interface foi criada para facilitar o acesso e a gestão de diversos projet
 - [Calculadora - IMC](https://sobreirinha.github.io/projetos/projeto_imc/imc.html)
 - [T-shirt Store](https://sobreirinha.github.io/projetos/projeto_tshirt_store/t-shirt_store.html)
 - [Cronômetro](https://sobreirinha.github.io/projetos/projeto_cronometro/index.html)
-- [Academy geo - site simples] (https://sobreirinha.github.io/projetos/projeto-academy-geo/index.html)
+- [Academy geo - site simples](https://sobreirinha.github.io/projetos/projeto-academy-geo/index.html)
